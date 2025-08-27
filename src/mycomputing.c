@@ -87,3 +87,81 @@ int maisRepetido(int *v, int n) {
     }
     return val;
 }
+
+int ehLetraOuNumero(char c) {
+    if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+        return 1;
+    return 0;
+}
+
+char paraMinusculo(char c) {
+    if(c >= 'A' && c <= 'Z')
+        return c + ('a' - 'A');
+    return c;
+}
+
+void normalizar(char *src, char *dst) {
+    int i = 0, j = 0;
+    while(src[i]) {
+        if(ehLetraOuNumero(src[i])) {
+            dst[j++] = paraMinusculo(src[i]);
+        }
+        i++;
+    }
+    dst[j] = '\0';
+}
+int ehPalindromo(char *str) {
+    int i = 0, j;
+    for(j = 0; str[j]; j++);
+    j--;
+    while(i < j) {
+        if(str[i] != str[j])
+            return 0;
+        i++;
+        j--;
+    }
+    return 1;
+}
+int eh_nome(char *s) {
+    int i = 0;
+    for(; s[i]; i++)
+        if(!((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z') || s[i] == ' '))
+            return 0;
+    return i > 0;
+}
+
+int eh_inteiro(char *s) {
+    int i = 0;
+    if(s[0] == '-' || s[0] == '+') i++;
+    if(s[i] == 0) return 0;
+    for(; s[i]; i++)
+        if(s[i] < '0' || s[i] > '9')
+            return 0;
+    return 1;
+}
+
+int eh_real(char *s) {
+    int i = 0, virg = 0, dig = 0;
+    if(s[0] == '-' || s[0] == '+') i++;
+    for(; s[i]; i++) {
+        if(s[i] == ',') {
+            virg++;
+            if(virg > 1) return 0;
+        } else if(s[i] >= '0' && s[i] <= '9') {
+            dig = 1;
+        } else {
+            return 0;
+        }
+    }
+    return dig && virg == 1;
+}
+
+int eh_alfanumerica(char *s) {
+    int i = 0, tem_letra = 0, tem_dig = 0;
+    for(; s[i]; i++) {
+        if((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z')) tem_letra = 1;
+        else if(s[i] >= '0' && s[i] <= '9') tem_dig = 1;
+        else return 0;
+    }
+    return tem_letra && tem_dig;
+}

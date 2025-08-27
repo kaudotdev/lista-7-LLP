@@ -55,11 +55,16 @@ void questao6() {
 }
 
 void questao7() {
-
+    char frase[1001], norm[1001];
+    lerFrase(frase, 1001);
+    normalizar(frase, norm);
+    resultadoq7(ehPalindromo(norm));
 }
 
 void questao8() {
-
+    char seq[257];
+    ler_entrada(seq, 257);
+    classificar(seq);
 }
 
 void questao9() {

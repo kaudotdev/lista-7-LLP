@@ -10,6 +10,8 @@ void ler_float(float *x);
 void ler_temperaturas(float *v, int n);
 void ler_floats(float *v, int n);
 void ler_dois_int(int *i, int *j);
+void lerFrase(char *str, int max);
+void ler_entrada(char *s, int max);
 
 int menu();
 

@@ -12,5 +12,13 @@ void preencher(float *v, int n);
 float media(float *v, int n);
 float desvioPadrao(float *v, int n, float m);
 int maisRepetido(int *v, int n);
+int ehLetraOuNumero(char c);
+char paraMinusculo(char c);
+void normalizar(char *src, char *dst);
+int ehPalindromo(char *str);
+int eh_nome(char *s);
+int eh_inteiro(char *s);
+int eh_real(char *s);
+int eh_alfanumerica(char *s);
 
 #endif // MYCOMPUTING_H_INCLUDED

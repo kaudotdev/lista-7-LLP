@@ -38,6 +38,24 @@ void ler_dois_int(int *i, int *j) {
     scanf("%d%d", i, j);
 }
 
+void lerFrase(char *str, int max) {
+    int i = 0, c;
+    while(i < max - 1 && (c = getchar()) != '\n' && c != EOF) {
+        str[i++] = c;
+    }
+    str[i] = '\0';
+}
+
+void ler_entrada(char *s, int max) {
+    int i = 0, c;
+    for (i = 0; i < max - 1; i++) {
+        c = getchar();
+        if (c == '\n') break;
+        s[i] = c;
+    }
+    s[i] = 0;
+}
+
 
 int menu()
 {
