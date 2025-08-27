@@ -60,7 +60,7 @@ void preencherA(int *a, int n) {
     int i, val;
     for(i=0; i<n; i++) {
         do {
-            printf("Insira um número intieor:\n");
+            printf("Insira um número intieor (A):\n");
             scanf("%d", &val);
         } while(val < 0);
         a[i] = val;
@@ -68,15 +68,17 @@ void preencherA(int *a, int n) {
 }
 
 void preencherB(int *b, int n) {
-    for(int i=0; i<n; i++)
-        printf("Insira um número inteiro:\n");
-    scanf("%d", b+i);
+    for(int i=0; i<n; i++) {
+        printf("Insira um número inteiro (B):\n");
+        scanf("%d", b+i);
+    }
 }
 
 void preencherC(int *c, int n) {
-    for(int i=0; i<n; i++)
-        printf("Insira um número inteiro:\n");
-    scanf("%d", c+i);
+    for(int i=0; i<n; i++) {
+        printf("Insira um número inteiro (C):\n");
+        scanf("%d", c+i);
+    }
 }
 
 
