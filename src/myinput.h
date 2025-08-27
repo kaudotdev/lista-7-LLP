@@ -12,6 +12,9 @@ void ler_floats(float *v, int n);
 void ler_dois_int(int *i, int *j);
 void lerFrase(char *str, int max);
 void ler_entrada(char *s, int max);
+void preencherA(int *a, int n);
+void preencherB(int *b, int n);
+void preencherC(int *c, int n);
 
 int menu();
 

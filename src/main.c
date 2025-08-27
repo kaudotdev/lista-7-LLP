@@ -68,7 +68,16 @@ void questao8() {
 }
 
 void questao9() {
-
+    int A[5], B[15], C[20], D[40], menor, pos;
+    char origem;
+    preencherA(A, 5);
+    preencherB(B, 15);
+    preencherC(C, 20);
+    montarD(C, 20, B, 15, A, 5, D);
+    exibir(D, 40);
+    menorD(D, 40, 5, 15, 20, &menor, &pos, &origem);
+    resultado(menor, pos, origem);
+    return 0;
 }
 
 int main() {

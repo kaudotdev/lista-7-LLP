@@ -20,5 +20,7 @@ int eh_nome(char *s);
 int eh_inteiro(char *s);
 int eh_real(char *s);
 int eh_alfanumerica(char *s);
+void montarD(int *c, int nc, int *b, int nb, int *a, int na, int *d);
+void menorD(int *d, int nd, int na, int nb, int nc, int *menor, int *pos, char *orig);
 
 #endif // MYCOMPUTING_H_INCLUDED

@@ -52,3 +52,6 @@ void classificar(char *s) {
     else
         printf("Tipo não identificado\n");
 }
+void resultadoq9(int menor, int pos, char origem) {
+    printf("menor elemento = %d, posição = %d e origem = %c\n", menor, pos, origem);
+}

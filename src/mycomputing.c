@@ -165,3 +165,23 @@ int eh_alfanumerica(char *s) {
     }
     return tem_letra && tem_dig;
 }
+
+void montarD(int *c, int nc, int *b, int nb, int *a, int na, int *d) {
+    for(int i=0; i<nc; i++) d[i] = c[i];
+    for(int i=0; i<nb; i++) d[nc+i] = b[i];
+    for(int i=0; i<na; i++) d[nc+nb+i] = a[i];
+}
+
+void menorD(int *d, int nd, int na, int nb, int nc, int *menor, int *pos, char *orig) {
+    *menor = d[0];
+    *pos = 0;
+    for(int i=1; i<nd; i++) {
+        if(d[i] < *menor) {
+            *menor = d[i];
+            *pos = i;
+        }
+    }
+    if(*pos < nc) *orig = 'C';
+    else if(*pos < nc+nb) *orig = 'B';
+    else *orig = 'A';
+}
