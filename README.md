@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  Resoluções detalhadas da <strong>Lista 7</strong> da matéria de Lógica e Linguagem de Programação.<br>
-  <em>IFBA Camaçari – Bacharelado em Engenharia</em>
+  Resoluções da <strong>Lista 7</strong> da matéria de Lógica e Linguagem de Programação.<br>
+  <em>IFBA Camaçari – ABI em Computação</em>
 </p>
 
 ---
