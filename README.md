@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Marca_IFBA_vertical.png" alt="IFBA Logo" height="120"/>
+  <img src="[https://upload.wikimedia.org/wikipedia/commons/6/6b/Marca_IFBA_vertical.png](https://iili.io/K2bRoqF.md.pn)" alt="IFBA Logo" height="120"/>
 </p>
 
 <h1 align="center">
