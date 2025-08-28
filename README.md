@@ -119,8 +119,6 @@ src/
    ./lista7
    ```
 
----
-
 <p align="center">
   👤 Autor:  <b>Kauan Souza</b>
 </p>
