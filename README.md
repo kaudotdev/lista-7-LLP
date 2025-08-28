@@ -119,10 +119,10 @@ src/
    ./lista7
    ```
 
+---
 <p align="center">
   👤 Autor:  <b>Kauan Souza</b>
 </p>
 
----
 
 <p align="center"><i>Desenvolvido para fins acadêmicos no IFBA Camaçari</i></p>
