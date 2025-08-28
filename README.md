@@ -20,8 +20,8 @@
 
 ## 📚 Sobre o Projeto
 
-Este repositório apresenta soluções comentadas para a **Lista 7** da disciplina de Lógica e Linguagem de Programação, desenvolvidas em linguagem C.  
-Cada função no arquivo principal está acompanhada do enunciado da questão, facilitando o entendimento.
+Este repositório apresenta soluções para a **Lista 7** da disciplina de Lógica e Linguagem de Programação, desenvolvidas na linguagem C.  
+Cada função no arquivo principal está acompanhada do enunciado da questão em um cabeçalho.
 
 ---
 
@@ -32,7 +32,7 @@ src/
  ├─ main.c        # Funções principais, cada uma para uma questão (enunciados nos comentários)
  ├─ myinput.c     # Funções de entrada de dados
  ├─ myoutput.c    # Funções de saída de dados
- └─ mycomputing.c # Funções matemáticas e de processamento
+ └─ mycomputing.c # Funções de processamento
 ```
 
 ---
