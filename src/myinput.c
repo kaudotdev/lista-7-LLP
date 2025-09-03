@@ -39,11 +39,9 @@ void ler_dois_int(int *i, int *j) {
 }
 
 void lerFrase(char *str, int max) {
-    int i = 0, c;
-    while(i < max - 1 && (c = getchar()) != '\n' && c != EOF) {
-        str[i++] = c;
-    }
-    str[i] = '\0';
+    printf("Insira uma frase:\n");
+    scanf(" %999[^\n]", str); 
+    str[max-1] = '\0';
 }
 
 void ler_entrada(char *s, int max) {
